@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutHub 2026 | O Universo do Futebol</title>
+    <!-- Ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Nosso CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                FutHub <span>2026</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><button class="tab-btn active" data-tab="brasileirao">Brasileirão</button></li>
+                    <li><button class="tab-btn" data-tab="libertadores">Libertadores</button></li>
+                    <li><button class="tab-btn" data-tab="copa">Copa 2026</button></li>
+                    <li><button class="tab-btn" data-tab="cartola">Meu Time (Cartola)</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO BRASILEIRÃO -->
+        <section id="brasileirao" class="section active">
+            <div class="section-header">
+                <h2 class="section-title">Brasileirão Série A 2026</h2>
+                <span class="badge">Rodada 12</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="pos">#</th>
+                            <th>Clube</th>
+                            <th class="hide-mobile">P</th>
+                            <th class="hide-mobile">J</th>
+                            <th class="hide-mobile">V</th>
+                            <th class="hide-mobile">SG</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody id="brasileirao-body">
+                        <!-- Preenchido pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO LIBERTADORES -->
+        <section id="libertadores" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Copa Libertadores 2026</h2>
+                <span class="badge">Fase de Grupos - Rodada 5</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="pos">#</th>
+                            <th>Clube</th>
+                            <th class="hide-mobile">P</th>
+                            <th class="hide-mobile">J</th>
+                            <th class="hide-mobile">SG</th>
+                        </tr>
+                    </thead>
+                    <tbody id="libertadores-body">
+                        <!-- Preenchido pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO COPA DO MUNDO -->
+        <section id="copa" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Copa do Mundo 2026 🌎</h2>
+                <span class="badge live">AO VIVO</span>
+            </div>
+            
+            <div class="match-banner">
+                <div>
+                    <div class="match-info">Grupo A - Estádio MetLife, NY</div>
+                    <div class="match-teams">🇧🇷 Brasil 2 x 1 Sérvia 🇷🇸</div>
+                </div>
+                <div class="match-time">78' 2T</div>
+            </div>
+
+            <h3 class="sub-title">Grupos Principais</h3>
+            <div class="grid" id="copa-groups">
+                <!-- Preenchido pelo JavaScript -->
+            </div>
+        </section>
+
+        <!-- SEÇÃO CARTOLA / MEU TIME -->
+        <section id="cartola" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Meu Time (Cartola FC)</h2>
+                <div class="total-points">Pontuação Total: <span>84.50</span></div>
+            </div>
+            <div class="grid" id="my-team">
+                <!-- Preenchido pelo JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Nosso JavaScript separado -->
+    <script src="script.js"></script>
+</body>
+</html>
